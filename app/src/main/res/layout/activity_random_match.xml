@@ -2,14 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
     android:orientation="vertical"
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RandomMatchActivity">
 
+    <Button
+        style="@style/btnBasic"
+        android:id="@+id/btnMailbox"
+        android:text="쪽지함"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 
     <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -20,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/user_portrait"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/im1" />
 
         <TextView
             style="@style/textBasic"
@@ -39,12 +49,14 @@
             android:gravity="center_horizontal">
 
             <Button
+                style="@style/btnBasic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/pick_button"
                 android:text="pick"/>
 
             <Button
+                style="@style/btnBasic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/pass_button"

@@ -15,12 +15,18 @@ public class PackageSelectActivity extends AppCompatActivity {
     private Button package2;
     private Button package3;
     private Button package4;
+    private String year,month,day;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_package_select);
+
+        Intent intent = getIntent();
+        year = intent.getStringExtra("year");
+        month = intent.getStringExtra("month");
+        day = intent.getStringExtra("day");
 
         package1 = (Button)findViewById(R.id.package1);
         package2 = (Button)findViewById(R.id.package2);
@@ -61,8 +67,8 @@ public class PackageSelectActivity extends AppCompatActivity {
         builder.setPositiveButton("알고있어",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(),PackageDetailsActivity.class);
-                        intent.putExtra("id",1);
+                        Intent intent = new Intent(getApplicationContext(),DatePickActivity.class);
+                        intent.putExtra("id",4);
                         startActivity(intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | intent.FLAG_ACTIVITY_SINGLE_TOP));
                     }
                 });
@@ -82,8 +88,8 @@ public class PackageSelectActivity extends AppCompatActivity {
         builder.setPositiveButton("알고있어",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(),PackageDetailsActivity.class);
-                        intent.putExtra("id",2);
+                        Intent intent = new Intent(getApplicationContext(),DatePickActivity.class);
+                        intent.putExtra("id",3);
                         startActivity(intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | intent.FLAG_ACTIVITY_SINGLE_TOP));                    }
                 });
         builder.setNegativeButton("부담스럽네",
@@ -102,8 +108,8 @@ public class PackageSelectActivity extends AppCompatActivity {
         builder.setPositiveButton("알고있어",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(),PackageDetailsActivity.class);
-                        intent.putExtra("id",3);
+                        Intent intent = new Intent(getApplicationContext(),DatePickActivity.class);
+                        intent.putExtra("id",2);
                         startActivity(intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | intent.FLAG_ACTIVITY_SINGLE_TOP));                    }
                 });
         builder.setNegativeButton("별론데",
@@ -122,8 +128,8 @@ public class PackageSelectActivity extends AppCompatActivity {
         builder.setPositiveButton("알고있어",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(),PackageDetailsActivity.class);
-                        intent.putExtra("id",4);
+                        Intent intent = new Intent(getApplicationContext(),DatePickActivity.class);
+                        intent.putExtra("id",1);
                         startActivity(intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | intent.FLAG_ACTIVITY_SINGLE_TOP));                    }
                 });
         builder.setNegativeButton("다른거 해볼래요",

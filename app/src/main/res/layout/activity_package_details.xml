@@ -14,45 +14,53 @@ tools:context=".PackageDetailsActivity">
     android:layout_gravity="center">
 
     <Button
+        style="@style/btnBasic"
         android:id="@+id/cafe_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="cafe"/>
 
     <TextView
+        style="@style/textBasic"
         android:id="@+id/cafe_selection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
+        style="@style/btnBasic"
         android:id="@+id/meal_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="meal"/>
 
     <TextView
+        style="@style/textBasic"
         android:id="@+id/meal_selection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
+        style="@style/btnBasic"
         android:id="@+id/movie_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="movie"/>
 
     <TextView
+        style="@style/textBasic"
         android:id="@+id/movie_selection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
+        style="@style/btnBasic"
         android:id="@+id/pub_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="pub"/>
 
     <TextView
+        style="@style/textBasic"
         android:id="@+id/pub_selection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -64,12 +72,14 @@ tools:context=".PackageDetailsActivity">
         android:gravity="center">
 
         <Button
-            android:id="@+id/prev_button"
+            style="@style/btnBasic"
+            android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="back"/>
 
         <Button
+            style="@style/btnBasic"
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

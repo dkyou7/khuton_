@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".PackageSelectActivity" />
+        <activity android:name=".RandomMatchActivity" />
+        <activity android:name=".PackageDetailsActivity" />
+        <activity android:name=".DatePickActivity" />
+        <activity android:name=".MailboxActivity" />
+        <activity android:name=".LoginSplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".PackageSelectActivity" />
-        <activity android:name=".RandomMatchActivity" />
-        <activity android:name=".PackageDetailsActivity"></activity>
+        <activity android:name=".FinalMessageActivity" />
+        <activity android:name=".RandomImageActivity"></activity>
     </application>
 
 </manifest>

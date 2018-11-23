@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="#9145afc7"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".PackageDetailsActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/cafe_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cafe"/>
+
+    <TextView
+        android:id="@+id/cafe_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/meal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="meal"/>
+
+    <TextView
+        android:id="@+id/meal_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/movie_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="movie"/>
+
+    <TextView
+        android:id="@+id/movie_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/pub_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pub"/>
+
+    <TextView
+        android:id="@+id/pub_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

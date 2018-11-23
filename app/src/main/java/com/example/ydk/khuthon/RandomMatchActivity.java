@@ -28,7 +28,7 @@ public class RandomMatchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),PackageSelectActivity.class);
-                startActivity(intent);
+                startActivity(intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TOP | intent.FLAG_ACTIVITY_SINGLE_TOP));
             }
         });
 
